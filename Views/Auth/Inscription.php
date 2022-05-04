@@ -68,7 +68,7 @@
 						</div>
 					</div>
 					<div class="text-center mt-5 text-muted">
-						Copyright &copy; 2022 &mdash; 
+						Copyright &copy; 2023 &mdash; 
 					</div>
 				</div>
 			</div>
