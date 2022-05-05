@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,17 +7,19 @@
     <title>Easy Stock</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      <a class="nav-item nav-link text-orange" href="/easy-stock-app/accueil">Accueil</a>
+      <a class="nav-item nav-link" href="#">Gestion Clients</a>
+      <a class="nav-item nav-link" href="#">Gestion Fournisseurs</a>
+      <a class="nav-item nav-link" href="#">Gestion Stocks</a>
+      <a class="nav-item nav-link" href="#">Gestion Livraisons</a>
+      <a class="nav-item nav-link" href="#">Gestion Facturations</a>
+      <a class="nav-item nav-link" href="/easy-stock-app/commandes">Gestion Commandes</a>
     </div>
   </div>
 </nav>

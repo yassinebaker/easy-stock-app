@@ -21,7 +21,6 @@
 									</div>
 								</div>
 								
-
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="email">Email</label>
 									<input id="email" type="email" class="form-control" name="email" value="" required>
@@ -29,21 +28,23 @@
 										L'addresse Mail est invalide!
 									</div>
 								</div>
-								<div class="mb-3">
-									<label class="mb-2 text-muted" for="name">Adresse</label>
-									<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
-									<div class="invalid-feedback">
-										Veuillez entrer le Nom	
+								
+								<div class="d-flex gap-3">
+									<div class="mb-3">
+										<label class="mb-2 text-muted" for="name">Adresse</label>
+										<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+										<div class="invalid-feedback">
+											Veuillez entrer le Nom	
+										</div>
+									</div>
+									<div class="mb-3">
+										<label class="mb-2 text-muted" for="name">Numéro Téléphone</label>
+										<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+										<div class="invalid-feedback">
+											Veuillez entrer le Nom	
+										</div>
 									</div>
 								</div>
-								<div class="mb-3">
-									<label class="mb-2 text-muted" for="name">Numéro Téléphone</label>
-									<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
-									<div class="invalid-feedback">
-										Veuillez entrer le Nom	
-									</div>
-								</div>
-
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="password">Mot de Passe</label>
 									<input id="password" type="password" class="form-control" name="password" required>
@@ -55,15 +56,15 @@
 							
 
 								<div class="align-items-center d-flex">
-									<button type="submit" class="btn btn-primary ms-auto">
+									<button type="submit" class="btn rounded-btn bg-purple ms-auto">
 										S'inscrire	
 									</button>
 								</div>
 							</form>
 						</div>
-						<div class="card-footer py-3 border-0">
+						<div class="card-footer py-2 border-0">
 							<div class="text-center">
-								vous avez deja un compte? <a href="./Connexion.php" class="text-dark"> Se connecter</a>
+								Vous avez déja un compte ? <a href="/easy-stock-app/login" class="text-dark"> Se connecter</a>
 							</div>
 						</div>
 					</div>

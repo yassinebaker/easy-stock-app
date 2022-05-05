@@ -1,6 +1,7 @@
 <style>
     <?php include '../../public/css/bootstrap.min.css'; ?>
 </style>
+
 <section class="h-100">
 		<div class="container h-100">
 			<div class="row justify-content-sm-center h-100">
@@ -36,7 +37,7 @@
 										<input type="checkbox" name="remember" id="remember" class="form-check-input">
 										<label for="remember" class="form-check-label">Se souvenir de moi </label>
 									</div>
-									<button type="submit" class="btn btn-primary ms-auto">
+									<button type="submit" class="btn rounded-btn bg-purple  ms-auto">
 										Se connecter
 									</button>
 								</div>
@@ -44,7 +45,7 @@
 						</div>
 						<div class="card-footer py-3 border-0">
 							<div class="text-center">
-								Pas encore de compte? <a href="./Inscription.php" class="text-dark">S'inscrire</a>
+								Pas encore de compte? <a href="/easy-stock-app/inscription" class="text-dark">S'inscrire</a>
 							</div>
 						</div>
 					</div>

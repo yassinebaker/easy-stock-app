@@ -1,6 +1,6 @@
 <?php
-    require_once('../config/database.php');
-
+    require_once('./config/database.php');
+    $testingSomething = 'Lorem Ipsum';
     class User 
     {
         private $conn = null;
@@ -18,7 +18,7 @@
             $datas =$stmt->fetchAll(PDO::FETCH_ASSOC);
         }
         public function login(){
-            $stmt = $this->conn->prepare('SELECT * FROM user');
+            $stmt = $this->conn->prepare('SELECT * FROM cashier');
             $stmt->execute();
             $datas =$stmt->fetchAll(PDO::FETCH_ASSOC);
         }
