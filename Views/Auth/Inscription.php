@@ -1,11 +1,14 @@
 <style>
     <?php include '../../public/css/bootstrap.min.css'; ?>
 </style>
+<!-- <?php 
+	
+?> -->
 <section class="h-100">
 		<div class="container h-100">
 			<div class="row justify-content-sm-center h-100">
 				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
-					<div class="text-center my-5">
+					<div class="text-center my-3">
 					<!--	<img src="../../public/images/logo.jpeg" alt="logo" width="100">-->
                     <h1>Easy Stock </h1>
 					</div>
@@ -15,42 +18,42 @@
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="name">Nom</label>
-									<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
-									<div class="invalid-feedback">
-										Veuillez entrer le Nom	
-									</div>
+									<input id="name" type="text" class="form-control mb-2" name="nom" value="<?php $data['nom']?>" required autofocus>
+									<small class='text-danger'>
+										<?php echo $data['erreurNom']; ?>
+									</small>
 								</div>
 								
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="email">Email</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required>
-									<div class="invalid-feedback">
-										L'addresse Mail est invalide!
-									</div>
+									<input id="email" type="email" class="form-control mb-2" name="email" value="<?php $data['email']?>" required>
+									<small class='text-danger'>
+									<?php echo $data['erreurMail']; ?>
+									</small>
 								</div>
 								
 								<div class="d-flex gap-3">
 									<div class="mb-3">
 										<label class="mb-2 text-muted" for="name">Adresse</label>
-										<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
-										<div class="invalid-feedback">
-											Veuillez entrer le Nom	
-										</div>
+										<input id="name" type="text" class="form-control mb-2" name="adresse" value="<?php $data['adresse']?>" required autofocus>
+										<small class='text-danger'>
+										<?php echo $data['erreurAdresse']; ?>
+										</small>
 									</div>
 									<div class="mb-3">
 										<label class="mb-2 text-muted" for="name">Numéro Téléphone</label>
-										<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
-										<div class="invalid-feedback">
-											Veuillez entrer le Nom	
-										</div>
+										<input id="name" type="text" class="form-control mb-2" name="telephone" value="<?php $data['telephone']?>" required autofocus>
+										<small class='text-danger'>
+										<?php echo $data['erreurtelephone']; ?>
+										</small>
 									</div>
 								</div>
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="password">Mot de Passe</label>
-									<input id="password" type="password" class="form-control" name="password" required>
-								    <div class="invalid-feedback">
-								    	Veuillez entrer le mot de Passe
-							    	</div>
+									<input id="password" type="password" class="form-control mb-2" name="mot_de_passe" value="<?php $data['mot_de_passe']?>" required>
+								    <small class='text-danger'>
+										<?php echo $data['erreurMot_de_passe']; ?>
+							    	</small>
 								</div>
 
 							

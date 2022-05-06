@@ -1,7 +1,6 @@
-<style>
-    <?php include '../../public/css/bootstrap.min.css'; ?>
-</style>
-
+<?php
+// echo($data['email']);
+?>
 <section class="h-100">
 		<div class="container h-100">
 			<div class="row justify-content-sm-center h-100">
@@ -16,20 +15,21 @@
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="email">Addresse Mail</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
-									<div class="invalid-feedback">
-										L'adrresse Mail est invalide
-									</div>
+									<input id="email" type="email" class="form-control mb-3" name="email" value="" required autofocus>
+									<small class="text-danger">
+										<?php echo $data['erreurMail']?>
+									</small>
 								</div>
 
 								<div class="mb-3">
 									<div class="mb-2 w-100">
 										<label class="text-muted" for="password">Mot de Passe</label>
 									</div>
-									<input id="password" type="password" class="form-control" name="password" required>
-								    <div class="invalid-feedback">
-								    	Veuillez saisir le Mot de Passe 
-							    	</div>
+									<input id="password" type="password" class="form-control mb-3" name="mot_de_passe" required>
+								    <small class="text-danger">
+										<?php echo $data['erreurMot_de_passe']?>
+								    	
+							    	</small>
 								</div>
 
 								<div class="d-flex align-items-center">

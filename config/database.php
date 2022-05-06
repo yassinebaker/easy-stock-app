@@ -4,7 +4,7 @@ class Database
 {
     private $user = "root";
     private $host = "localhost";
-    private $database = "cashier-app";
+    private $database = "easy-stock-app";
 
     private $connection;
 
