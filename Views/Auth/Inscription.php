@@ -1,9 +1,6 @@
 <style>
     <?php include '../../public/css/bootstrap.min.css'; ?>
 </style>
-<!-- <?php 
-	
-?> -->
 <section class="h-100">
 		<div class="container h-100">
 			<div class="row justify-content-sm-center h-100">
@@ -14,7 +11,7 @@
 					</div>
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
-							<h1 class="fs-4 card-title fw-bold mb-4">Inscription</h1>
+							<h1 class="fs-4 card-title fw-bold mb-4"><?php echo $data['title']; ?></h1>
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">
 									<label class="mb-2 text-muted" for="name">Nom</label>

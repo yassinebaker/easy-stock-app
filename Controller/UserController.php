@@ -9,9 +9,10 @@
         public function __construct(){
             $this->userModel =$this->model('User');
         }
-        public function inscription()
+        public function inscription($title)
         {
             $data = [
+                'title' =>$title,
                 'nom' => '',
                 'email' => '',
                 'mot_de_passe' => '',
@@ -29,6 +30,7 @@
                 $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
         
                       $data = [
+                        'title' =>$title,
                         'nom' => trim($_POST['nom']),
                         'email' => trim($_POST['email']),
                         'mot_de_passe' => trim($_POST['mot_de_passe']),
@@ -146,8 +148,9 @@
                         if ($userconnecter) 
                         {
                             $this->createSession($userconnecter);
+                            header("Location: /easy-stock-app/accueil");
                             echo '<pre>';
-                            var_dump($_SESSION);
+                            // var_dump($_SESSION);
                             echo '</pre>';
                         }else {
                             $data['erreurMot_de_passe'] ='Mail ou mot de passe incorrect';
@@ -161,5 +164,25 @@
                         $_SESSION['username'] = $user['nom'];
                         $_SESSION['email'] = $user['email']; 
                     }
+                    public function logout() {
+                        unset($_SESSION['user_id']);
+                        unset($_SESSION['username']);
+                        unset($_SESSION['email']);
+                        header("location:/easy-stock-app/login");
+                    }
+                    
+                    public function toutLesUsers()
+                    {
+                        $searchQuery = '';
+                        $idQuery ='';
+                        if($_SERVER['REQUEST_METHOD'] == 'POST')
+                        {
+                            $searchQuery = trim($_POST['nom']);
+                            $idQuery = trim($_POST['id']);
+                        }
+                        $clients = $this->userModel->getAllUsers($searchQuery,$idQuery);
+
+                        $this->view('/Clients/liste_client', $clients);
+                    }
             }
-?>
+            ?>

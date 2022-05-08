@@ -63,4 +63,13 @@
             }
 
         }
+        public function getAllUsers($searchQuery,$idQuery){
+            $query = (isset($searchQuery) || isset($idQuery)) ? 
+             "SELECT * FROM utilisateur WHERE nom LIKE '%$searchQuery%' AND id LIKE '%$idQuery%'  AND role = '0'" :
+             "SELECT * FROM utilisateur WHERE role = '0'" ;
+            $stmt = $this->conn->prepare($query);
+            $stmt->execute();
+            $datas =$stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $datas;
+        }
     }
