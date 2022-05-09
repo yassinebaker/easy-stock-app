@@ -12,6 +12,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <?php if ($_SESSION['role']=='1') : ?>
     <div class="navbar-nav">
       <a class="nav-item nav-link text-orange" href="/easy-stock-app/accueil">Accueil</a>
       <a class="nav-item nav-link" href="/easy-stock-app/client/tout">Gestion Clients</a>
@@ -22,6 +23,9 @@
       <a class="nav-item nav-link" href="/easy-stock-app/commandes/encours">Gestion Commandes</a>
       <a class="nav-item nav-link" href="/easy-stock-app/logout">Deconnexion</a>
     </div>
+    <?php else :?>
+      <a class="nav-item nav-link text-orange" href="/easy-stock-app/accueil">Accueil</a>
+    <?php endif ?>
   </div>
 </nav>
 <body>

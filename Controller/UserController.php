@@ -149,9 +149,6 @@
                         {
                             $this->createSession($userconnecter);
                             header("Location: /easy-stock-app/accueil");
-                            echo '<pre>';
-                            // var_dump($_SESSION);
-                            echo '</pre>';
                         }else {
                             $data['erreurMot_de_passe'] ='Mail ou mot de passe incorrect';
                         }
@@ -163,6 +160,7 @@
                         $_SESSION['user_id'] = $user['id'];
                         $_SESSION['username'] = $user['nom'];
                         $_SESSION['email'] = $user['email']; 
+                        $_SESSION['role'] = $user['role']; 
                     }
                     public function logout() {
                         unset($_SESSION['user_id']);

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container text-center py-5">
-        <h1 class=''>Page Non Trouvée</h1>
+        <h1 class=''>Page Inaccessible</h1>
         <a class='text-orange' href='/easy-stock-app/login'>Se connecter</a>
     </div>
 </body>
