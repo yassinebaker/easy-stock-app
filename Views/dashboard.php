@@ -7,7 +7,7 @@
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <button type="button" class="btn btn-lg px-4 gap-3 rounded-btn bg-purple text-white">Allez au Stock</button>
         </div>
-        <?php else : ?>:
+        <?php else : ?>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <button type="button" class="btn btn-lg px-4 gap-3 rounded-btn bg-purple text-white">
             <a class="text-white text-decoration-none"href="/easy-stock-app/commande/ajout">Commander</a>
