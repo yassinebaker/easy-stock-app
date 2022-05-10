@@ -1,9 +1,3 @@
-<style>
-    <?php include '../../public/css/bootstrap.min.css'; ?>
-</style>
-<!-- <?php 
-	
-?> -->
 <section class="h-100">
 		<div class="container h-100">
 			<div class="row justify-content-sm-center h-100">
@@ -60,11 +54,6 @@
 									</button>
 								</div>
 							</form>
-						</div>
-						<div class="card-footer py-2 border-0">
-							<div class="text-center">
-								Vous avez déja un compte ? <a href="/easy-stock-app/login" class="text-dark"> Se connecter</a>
-							</div>
 						</div>
 					</div>
 					<div class="text-center mt-5 text-muted">

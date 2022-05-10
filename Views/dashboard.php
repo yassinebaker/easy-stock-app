@@ -5,7 +5,9 @@
       <p class="lead mb-4">Avec l'application Easy Stock. Soyez au controle de votre magasin.</p> 
       <?php if($_SESSION['role']=='1') :?>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-lg px-4 gap-3 rounded-btn bg-purple text-white">Allez au Stock</button>
+          <button type="button" class="btn btn-lg px-4 gap-3 rounded-btn bg-purple text-white">
+            <a class="text-white text-decoration-none"href="/easy-stock-app/produit">Allez au Stock</a>
+          </button>
         </div>
         <?php else : ?>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -16,4 +18,3 @@
         <?php endif;?>
     </div>
   </div>
-<?php include 'inc/footer.php'?>

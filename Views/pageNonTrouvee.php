@@ -9,7 +9,7 @@
 <body>
     <div class="container text-center py-5">
         <h1 class=''>Page Inaccessible</h1>
-        <a class='text-orange' href='/easy-stock-app/login'>Se connecter</a>
+        <a class='text-orange' href='/easy-stock-app/login'>Retour</a>
     </div>
 </body>
 </html>

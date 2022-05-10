@@ -1,5 +1,4 @@
 <?php
-    // require('Models/User.php');
     require('Controller.php');
     
     class UserController extends Controller
@@ -24,9 +23,8 @@
                 'erreurtelephone' => '',
                 'erreurAdresse' => '',
             ];
+
             if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                // Process form
-                // Sanitize POST data
                 $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
         
                       $data = [
@@ -47,14 +45,14 @@
                     $passwordValidation = "/^(.{0,7}|[^a-z]*|[^\d]*)$/i";
                     $mobileNumberValidation = "/^[0-9]{10}+$/";
         
-                    //Validate username on letters/numbers
+                
                     if (empty($data['nom'])) {
                         $data['erreurNom'] = 'Veuillez entrez le nom.';
                     } elseif (!preg_match($nameValidation, $data['nom'])) {
                         $data['erreurNom'] = 'Le nom ne peut contenir que des caractères alphanumeriques.';
                     }
         
-                    //Validate email
+                  
                     if (empty($data['email'])) {
                         $data['erreurMail'] = "Veuillez entrez l'adresse mail";
                     } elseif (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
@@ -68,7 +66,6 @@
                         }
                     }
         
-                   // Validate password on length, numeric values,
                     if(empty($data['mot_de_passe'])){
                       $data['erreurMot_de_passe'] = 'Veuillez entrez le mot de passe';
                     } elseif(strlen($data['mot_de_passe']) < 6){
@@ -100,7 +97,7 @@
                         }
                     }
                 }
-            $this->view('/Auth/Inscription',$data);
+                $this->view('/Auth/Inscription',$data);
         }
         public function connexion()
         {
