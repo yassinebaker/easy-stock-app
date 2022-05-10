@@ -7,9 +7,10 @@
     <title>Easy Stock</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
   </head>
+  <body>
   <?php if (isset($_SESSION['role']) && $_SESSION['role']=='1') : ?>
     <!-- Header Admin -->
-    <header class='d-flex justify-content-between px-4 align-items-center'>
+    <header class='d-flex justify-content-between px-4 align-items-center '>
       <nav class="navbar navbar-expand-lg navbar-light  p-3">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,24 +43,23 @@
      <?php else :?>
       <!-- Header Client -->
       <header class='d-flex justify-content-between px-4 align-items-center'>
-        <nav class="navbar navbar-expand-lg navbar-light  p-3">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            
-            <div class="navbar-nav">
-              <a class="nav-item nav-link text-orange" href="/easy-stock-app/accueil">Accueil</a>
-              <a class="nav-item nav-link" href="/easy-stock-app/logout">Deconnexion</a>
+          <nav class="navbar navbar-expand-lg navbar-light  p-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              
+              <div class="navbar-nav">
+                <a class="nav-item nav-link text-orange" href="/easy-stock-app/accueil">Accueil</a>
+                <a class="nav-item nav-link" href="/easy-stock-app/logout">Deconnexion</a>
+              </div>
             </div>
-          </div>
-        </nav>
+          </nav>
         <div class='d-flex align-items-center  p-2'>
-        <ion-icon name="person" class='h3 text-orange'></ion-icon>
-        <small class="  rounded mx-2">
-          <?php echo $_SESSION['username']?>
-        </small>
-      </div>  
+            <ion-icon name="person" class='h3 text-orange'></ion-icon>
+            <small class="  rounded mx-2">
+              <?php echo $_SESSION['username']?>
+            </small>
+        </div>  
       </header>
   <?php endif ?>
-<body>

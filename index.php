@@ -75,18 +75,14 @@
     }elseif (parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH)=='/easy-stock-app/logout') 
     {
                 require_once('./helpers/logout.php');
-    }
-    
+    }    
     else{
         require_once('./Views/pageNonTrouvee.php');
     }
-  
 ?>
-
 <style>
     <?php include './public/css/bootstrap.min.css';
     include './public/css/main.css';
     ?>
 </style>
-
 <?php include './Views/inc/footer.php'?>
